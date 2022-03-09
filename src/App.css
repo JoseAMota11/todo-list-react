@@ -1,38 +1,78 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: #9796f0; 
+  background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  
+  background: linear-gradient(to right, #fbc7d4, #9796f0);
+  position: relative;
+}
+
+#root{
+  width: 380px;
+  height: 700px;
+  background: rgba(255, 255,255,0.6);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255, 255, 255,0.5);
+  border-right: 1px solid rgba(255,255, 255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-radius: 14px;
+  backdrop-filter: blur(25px);
+  overflow-y: auto;
+  position: relative;
+  padding: 4px 8px;
+}
+
+#root::-webkit-scrollbar {
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+#root::-webkit-scrollbar:vertical {
+  width:6px;
+}
+
+#root::-webkit-scrollbar-button:increment,#root::-webkit-scrollbar-button {
+  display: none;
+} 
+
+#root::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 20px;
+  
+}
+
+#root::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
+.loading{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.error{
+  color: #C91D1D;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portal__container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0,0.25);
+  color: #fff;
+  width: 380px;
+  height: 700px;
+  border-radius: 14px;
+  display: grid;
+  place-content: center;
+  z-index: 1;
 }

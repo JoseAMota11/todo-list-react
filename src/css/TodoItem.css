@@ -1,0 +1,57 @@
+.li__container{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
+    padding: 4px 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.para{
+    font-size: 14px;
+}
+
+.task__completed--p{
+    text-decoration: line-through;
+    color: #555;
+}
+
+.task__completed--li{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+ion-icon{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.button__done{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__done ion-icon:hover{
+    color: #319B44;
+}
+
+.button__done--clicked{
+    color: #319B44;
+}
+
+.button__done ion-icon{
+    padding: 4px;
+}
+
+.button__delete{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+.button__delete:hover{
+    color: #C91D1D;
+}
+

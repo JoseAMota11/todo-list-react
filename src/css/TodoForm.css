@@ -1,0 +1,64 @@
+.form__container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.label{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg,#4776E6,#8E54E9);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.textarea{
+    border: none;
+    outline-color: #4776E6;
+    padding: 12px;
+    border-radius: 6px;
+    resize: none;
+    overflow-y: auto;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.buttons__form{
+    display: flex;
+    justify-content: center;
+    gap: 76px;
+    margin-top: 12px;
+}
+
+.btn__cancel{
+    border: none;
+    width: 90px;
+    height: 40px;
+    color: #CC0000;
+    text-shadow: 1px 1px 1.125 #CC0000;
+    background: transparent;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn__add{
+    border: none;
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    background: linear-gradient(90deg,#4776E6,#8E54E9);
+    box-shadow: 2px 2px 8px #8E54E9, -2px -2px 8px #4776E6;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer; 
+}
